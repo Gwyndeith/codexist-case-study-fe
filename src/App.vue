@@ -1,5 +1,5 @@
 <template>
-	<img alt="Vue logo" src="./assets/codexist-logo.jpg" />
+	<img alt="Vue logo" src="./assets/codexist-logo.jpg" width="200px" />
 	<main>
 		<RouterView />
 	</main>
