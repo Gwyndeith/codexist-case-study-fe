@@ -107,6 +107,7 @@ export default {
 				currMarker = new google.maps.Marker({
 					position: { lat: currPos.value.lat, lng: currPos.value.lng },
 					map: map.value,
+					title: "Search center",
 				});
 		});
 		return { currPos, mapDiv, centerMapToSelectedLocation };
@@ -117,27 +118,29 @@ export default {
 <template>
 	<div class="hello">
 		<div>
-			<h4>Your Position</h4>
-			Latitude: {{ currPos.lat }}
+			<h4 style="color: white">Your Position</h4>
+			<label style="color: white">Latitude: {{ currPos.lat }}</label>
 			<br />
-			Longitude: {{ currPos.lng }}
+			<label style="color: white">Longitude: {{ currPos.lng }}</label>
 			<br />
 			<br />
 			<div style="display: flex; justify-content: center">
 				<div style="display: block; width: 10vw">
-					<label style="display: block; text-align: center">Latitude:</label>
+					<label style="display: block; text-align: center; color: white"
+						>Latitude:</label
+					>
 					<input type="text" v-model="targetLat" />
 				</div>
 				<br />
 				<br />
 				<div style="display: block; width: 10vw">
-					<label style="text-align: center">Longitude:</label>
+					<label style="text-align: center; color: white">Longitude:</label>
 					<input type="text" v-model="targetLng" />
 				</div>
 				<br />
 				<br />
 				<div style="display: block; width: 10vw">
-					<label style="text-align: center">Radius:</label>
+					<label style="text-align: center; color: white">Radius:</label>
 					<input type="text" v-model="targetRadius" />
 				</div>
 			</div>

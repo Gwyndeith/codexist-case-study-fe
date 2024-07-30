@@ -1,5 +1,10 @@
 <template>
-	<img alt="Vue logo" src="./assets/codexist-logo.jpg" width="200px" />
+	<img
+		style="margin-top: 20px; border-radius: 20px"
+		alt="Vue logo"
+		src="./assets/codexist-logo.jpg"
+		width="200px"
+	/>
 	<main>
 		<RouterView />
 	</main>
@@ -19,6 +24,6 @@ export default {
 	-moz-osx-font-smoothing: grayscale;
 	text-align: center;
 	color: #2c3e50;
-	margin-top: 60px;
+	background-color: darkslategrey;
 }
 </style>
