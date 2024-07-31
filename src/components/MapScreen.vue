@@ -8,8 +8,14 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue-next/dist/bootstrap-vue-next.css";
 // import axios from "axios";
 
-const center = { lat: 40.999475649442175, lng: 29.071924563270844 };
-let currPos = ref({ lat: 40.99949752297587, lng: 29.071944896190892 });
+const center = {
+	lat: parseFloat(process.env.VUE_APP_HOME_LATITUDE),
+	lng: parseFloat(process.env.VUE_APP_HOME_LONGITUDE),
+};
+let currPos = ref({
+	lat: parseFloat(process.env.VUE_APP_HOME_LATITUDE),
+	lng: parseFloat(process.env.VUE_APP_HOME_LONGITUDE),
+});
 let map = ref(null);
 let mapDiv = ref(null);
 let axiosInstance = createInstance();
@@ -68,17 +74,17 @@ export default {
 	props: {
 		msg: String,
 		center: center,
-		googleMapsAPIKey: process.env.VUE_APP_GOOGLE_MAPS_API_KEY,
+		googleMapsAPIKey: String,
 	},
 
 	setup() {
 		currPos = computed(() => ({
-			lat: 40.99949752297587,
-			lng: 29.071944896190892,
+			lat: parseFloat(process.env.VUE_APP_HOME_LATITUDE),
+			lng: parseFloat(process.env.VUE_APP_HOME_LONGITUDE),
 		}));
 
 		const loader = new Loader({
-			apiKey: "AIzaSyCO8pORQrIxc8nb7Bj04XMYvAVwXznDU3A",
+			apiKey: process.env.VUE_APP_GOOGLE_MAPS_API_KEY,
 		});
 		mapDiv = ref(null);
 		map = ref(null);
