@@ -41,7 +41,7 @@ The Vue.js app uses the following variables under the ".env" file.
 - VUE_APP_HOME_LATITUDE=40.999475649442175
 - VUE_APP_HOME_LONGITUDE=29.071924563270844
 
-The variables above should be added to the ".env" file without the "-" in the beginning, the rest of the lines should remain the same.
+The variables above should be added to the ".env" file without the "*" (dot) in the beginning, the rest of the lines should remain the same.
 
 # Deployment
 This web app is deployed and is accessible online at [Codexist Case Study FE](https://codexist-case-study-fe.onrender.com). The FE was deployed on Render. 
