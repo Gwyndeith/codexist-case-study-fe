@@ -36,7 +36,7 @@ All the dependencies are listed inside the package.json file. The following list
 # Environment Variables
 The Vue.js app uses the following variables under the ".env" file.
 - VUE_APP_BASE_URL=/
-- VUE_APP_GOOGLE_MAPS_API_KEY=AIzaSyCO8pORQrIxc8nb7Bj04XMYvAVwXznDU3A
+- VUE_APP_GOOGLE_MAPS_API_KEY=******PLEASE ASK FOR THE API KEY**********
 - VUE_APP_SPRING_SERVER_BASE_URL=http://localhost:8070/
 - VUE_APP_HOME_LATITUDE=40.999475649442175
 - VUE_APP_HOME_LONGITUDE=29.071924563270844
